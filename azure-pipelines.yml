@@ -27,4 +27,5 @@ stages:
         dockerfile: '**/Dockerfile'
         containerRegistry: 'DockerPOC01'
         tags: |
-          $(tag)
+          $(Build.BuildId)
+          latest
