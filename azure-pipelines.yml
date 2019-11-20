@@ -24,6 +24,7 @@ stages:
       displayName: Build and push image to container registry
       inputs:
         command: buildAndPush
+        repository: demos/Docksertestimage
         dockerfile: '**/Dockerfile'
         containerRegistry: dockerconnection
         tags: |
